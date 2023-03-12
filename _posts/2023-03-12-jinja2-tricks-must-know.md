@@ -3,9 +3,9 @@ layout: post
 title: "Jinja 2 tricks you must know"
 date: 2023-03-12
 ---
-Hello there, I am {{ author }}. This is my first post, and I hope you like it. Okay, so lets start!
+Hello there, I am _bruderooo_. This is my first post, and I hope you like it. Okay, so lets start!
 {% raw %}
-# Introduction
+## Introduction
 Jinja is a template engine for Python. It is used to generate text files. In this post, I will be 
 showing you some features of Jinja. It is very easy to use, and you will love it. The main syntax 
 of Jinja is `{{ }}`. It is used to print variables. For example, if you have a variable `name`, 
@@ -40,7 +40,7 @@ rendered = template.render(name="John")
 ```
 and in this code, variable `rendered` have content of file `index.html` with swapped tag `{{ name }}` to value `John`.
 
-# Jinja Features
+## Jinja Features
 Jinja is very powerful. It has loops, functions and conditions. Lets see some examples.
 
 ### Loops
@@ -83,6 +83,6 @@ Jinja has some built-in filters. You can use them to modify variables. For examp
 and this will print `NAME`.
 
 
-# Conclusion
+## Conclusion
 In this post, I showed you some features of Jinja. I hope you liked it. In next post I will show how to use Jinja to master writing SQL queries. If you have any questions, you can write to me on LinkedIn or send me a email. Thank you for reading!
 {% endraw %}
