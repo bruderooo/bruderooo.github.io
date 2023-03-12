@@ -1,3 +1,5 @@
 theme: jekyll-theme-cayman
+author: Szymon Jacoń
 title: Szymon Jacoń, ML Engineer
 description: Witamy w koloni
+permalink: /blog/:year/:month/:day/:title
