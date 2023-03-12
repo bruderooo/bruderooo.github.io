@@ -4,7 +4,7 @@ title: "Jinja 2 tricks you must know"
 date: 2023-03-12
 ---
 Hello there, I am {{ author }}. This is my first post, and I hope you like it. Okay, so lets start!
-
+{% raw %}
 # Introduction
 Jinja is a template engine for Python. It is used to generate text files. In this post, I will be 
 showing you some features of Jinja. It is very easy to use, and you will love it. The main syntax 
@@ -85,3 +85,4 @@ and this will print `NAME`.
 
 # Conclusion
 In this post, I showed you some features of Jinja. I hope you liked it. In next post I will show how to use Jinja to master writing SQL queries. If you have any questions, you can write to me on LinkedIn or send me a email. Thank you for reading!
+{% endraw %}
