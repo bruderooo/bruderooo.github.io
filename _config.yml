@@ -1,6 +1,9 @@
 theme: jekyll-theme-cayman
 title: Szymon Jacoń, ML Engineer
 description: Witamy w koloni
+markdown: kramdown
+highlighter: rouge
+    input: GFM
 collections:
   posts:
     output: true
