@@ -12,7 +12,7 @@ of Jinja is `{{ }}`. It is used to print variables. For example, if you have a v
 you can print it using `{{ name }}`. 
 
 Lets see some examples.
-```txt
+```Jinja
 {{ 1 + 1 }}             # Gives 2
 {{ print("Hello") }}    # Gives Hello
 {{ name.upper() }}      # Gives NAME
@@ -22,7 +22,7 @@ Lets see some examples.
 ```
 
 To render file from a template string, you can use Python code like bellow:
-```python
+```python3
 from jinja2 import Template
 
 template = Template("Hello {{ name }}")
@@ -31,7 +31,7 @@ rendered = template.render(name="John")
 and in this code variable `rendered` have value `Hello John`.
 
 You can also use code bellow to render a file:
-```python
+```python3
 from jinja2 import Environment, FileSystemLoader
 
 env = Environment(loader=FileSystemLoader("templates"))
@@ -45,7 +45,7 @@ Jinja is very powerful. It has loops, functions and conditions. Lets see some ex
 
 ### Loops
 To loop over a list, you can use `for` loop. For example, if you have a list `names`, you can loop over it like this:
-```txt
+```Jinja
 {% for name in names %}
     {{ name }}
 {% endfor %}
@@ -53,7 +53,7 @@ To loop over a list, you can use `for` loop. For example, if you have a list `na
 and this will print all names in the list.
 
 You can also loop over a dictionary (like in Python). For example, if you have a dictionary `names`, you can loop over it like this:
-```txt
+```Jinja
 {% for key, value in names.items() %}
     {{ key }}: {{ value }}
 {% endfor %}
@@ -61,13 +61,13 @@ You can also loop over a dictionary (like in Python). For example, if you have a
 
 ### Functions
 You can also use functions in Jinja. For example, if you have a function `add`, you can use it like this:
-```txt
+```Jinja
 {{ add(1, 2) }}
 ```
 
 ### Conditions
 And obliviously in Jinja you can use conditions. For example, if you have a variable `name`, you can use it like this:
-```txt
+```Jinja
 {% if name == "John" %}
     Hello John
 {% else %}
@@ -77,7 +77,7 @@ And obliviously in Jinja you can use conditions. For example, if you have a vari
 
 ### Filters
 Jinja has some built-in filters. You can use them to modify variables. For example, if you have a variable `name`, you can use it like this:
-```txt
+```Jinja
 {{ name | upper }}
 ```
 and this will print `NAME`.
